@@ -1,0 +1,90 @@
+{
+  "kind": "build_request",
+  "title": "Create apology website for Maham with interactive reveal",
+  "projectName": "Apology to Maham",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a landing page that displays 'Maham' as a clickable name element",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "u have to click her name to get to the apology"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The name 'Maham' is displayed prominently on the landing page",
+        "The name is clearly clickable with appropriate hover states",
+        "Clicking the name reveals or navigates to the apology message"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Display an apology message that appears after clicking the name 'Maham'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "saying sorry to Maham",
+          "u have to click her name to get to the apology"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Apology message is hidden initially",
+        "Apology message appears after clicking 'Maham'",
+        "Message is clearly readable and well-formatted"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement a pink and red color scheme throughout the website with all text rendered in white",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "use pink and red as main colours and all text to be white"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Primary colors used are pink and red",
+        "All text elements display in white color",
+        "Color scheme is applied consistently across all components",
+        "Sufficient contrast exists between background colors and white text for readability"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Design a creative, romantic visual theme with elegant typography and smooth transitions that complement the apology context, using the pink/red color palette throughout",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Visual design feels cohesive and appropriate for an apology message",
+        "Typography choices enhance readability and emotional tone",
+        "Transitions and interactions feel smooth and polished",
+        "Layout is clean and focused on the core interaction"
+      ]
+    }
+  ],
+  "constraints": [],
+  "nonGoals": [
+    "Backend data persistence or user authentication",
+    "Multiple pages beyond the reveal interaction",
+    "Animation libraries beyond CSS transitions"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

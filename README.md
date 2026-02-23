@@ -1,2 +1,3 @@
-# maham-apology-website
-Exported from Caffeine project: Maham Apology Website
+## Maham Apology Website
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

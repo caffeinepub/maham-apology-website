@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no methods or state, serving as a minimal backend placeholder.",
+  "feature_evidence.json": "Feature evidence report documenting four implemented features: clickable name landing page, apology message display, pink/red color scheme, and romantic visual theme with high confidence.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of frontend files describing the apology reveal app with romantic styling, custom animations, and OKLCH color system.",
+  "frontend/index.css": "Base Tailwind CSS configuration with OKLCH color variables for light and dark themes, using neutral grayscale values.",
+  "frontend/index.html": "HTML entry point with root div and module script reference to main.tsx, titled 'Maham Apology Website'.",
+  "frontend/src/App.tsx": "Main React component implementing an interactive apology page where clicking 'Maham' reveals a heartfelt apology message with animated hearts and smooth transitions.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages backend actor instances with Internet Identity authentication, invalidating dependent queries when identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context provider and hook for Internet Identity authentication, managing login state, identity persistence, and AuthClient lifecycle.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file with no backend query hooks since this is a frontend-only application.",
+  "frontend/src/index.css": "Global styles with pink/red romantic gradient background, Playfair Display and Inter fonts, OKLCH color variables, and custom fadeIn/apologyReveal animations.",
+  "frontend/src/main.tsx": "React application entry point wrapping App with QueryClientProvider and InternetIdentityProvider for state management and authentication.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration with custom color palette using OKLCH color space, extended theme with sidebar/chart colors, custom fonts (Inter, Playfair Display), border radius variables, and accordion animations.",
+  "project_state.json": "Project state tracking for a single-page apology website for Maham with interactive name click functionality, pink/red color scheme with white text, and four implemented features including landing page, apology message display, color scheme, and romantic visual theme."
+}

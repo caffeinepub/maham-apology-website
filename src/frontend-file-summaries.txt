@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Main application component featuring an interactive apology reveal - displays \"Maham\" as a clickable name that transitions to show a heartfelt apology message with animated hearts and smooth transitions.",
+  "frontend/src/index.css": "Global styles with pink/red romantic gradient background, white text throughout, elegant Playfair Display serif font for headings, custom animations for fade-in and reveal effects, and OKLCH color system tokens.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with pink/red color palette using OKLCH values, Playfair Display serif font family, and custom glow shadow for romantic aesthetic.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are needed for this frontend-only application."
+}
