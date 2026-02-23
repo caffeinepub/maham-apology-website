@@ -1,81 +1,42 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Create apology website for Maham with interactive reveal",
+  "title": "Republish app to fix deployment error",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Create a landing page that displays 'Maham' as a clickable name element",
+      "summary": "Republish the application to resolve canister deployment error and generate a valid working URL",
       "acceptanceCriteria": [
-        "The name 'Maham' is displayed prominently on the landing page",
-        "The name is clearly clickable with appropriate hover states",
-        "Clicking the name reveals or navigates to the apology message"
+        "App is successfully deployed to the Internet Computer",
+        "A valid canister URL is generated that does not return Error 400",
+        "The URL successfully loads the apology message interface with Maham's name, hearts, and flowers",
+        "The canister ID is properly resolved by the Internet Computer gateway"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Add state management for reveal interaction and render the clickable 'Maham' name element with appropriate event handlers and styling for hover states"
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Display an apology message that appears after clicking the name 'Maham'",
-      "acceptanceCriteria": [
-        "Apology message is hidden initially",
-        "Apology message appears after clicking 'Maham'",
-        "Message is clearly readable and well-formatted"
-      ],
-      "file_operations": [
+          "description": "Verify HTML structure is deployment-ready with proper meta tags and module script references for production build"
+        },
         {
           "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Add the apology message content that conditionally renders based on the reveal state, ensuring it is hidden initially and displays with proper formatting and readability after the name is clicked"
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Implement a pink and red color scheme throughout the website with all text rendered in white",
-      "acceptanceCriteria": [
-        "Primary colors used are pink and red",
-        "All text elements display in white color",
-        "Color scheme is applied consistently across all components",
-        "Sufficient contrast exists between background colors and white text for readability"
-      ],
-      "file_operations": [
+          "description": "Verify the interactive apology reveal component renders correctly in production, ensuring all animations (hearts, flowers, reveal) work after deployment"
+        },
         {
           "path": "frontend/src/index.css",
           "operation": "modify",
-          "description": "Define CSS custom properties or utility classes for pink and red color scheme, set global text color to white, and ensure consistent application across the application with sufficient contrast for readability"
+          "description": "Verify global styles including pink/red gradient background, Playfair Display font imports, and custom animations (fade-in, reveal, floating) are production-ready"
+        },
+        {
+          "path": "frontend/src/main.tsx",
+          "operation": "modify",
+          "description": "Verify React application entry point correctly initializes QueryClient and renders the App component for production deployment"
         },
         {
           "path": "frontend/tailwind.config.js",
           "operation": "modify",
-          "description": "Extend the Tailwind theme configuration to include pink and red as primary colors in the color palette, ensuring they are available for use throughout the components"
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Design a creative, romantic visual theme with elegant typography and smooth transitions that complement the apology context",
-      "acceptanceCriteria": [
-        "Visual design feels cohesive and appropriate for an apology message",
-        "Typography choices enhance readability and emotional tone",
-        "Transitions and interactions feel smooth and polished",
-        "Layout is clean and focused on the core interaction"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Import and configure elegant font families appropriate for a romantic apology context, define CSS transitions for smooth reveal animations, and establish layout styles that create a clean, focused design"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Apply elegant typography classes, smooth CSS transitions for the reveal interaction, and implement a centered, clean layout structure that focuses attention on the name and apology message"
+          "description": "Verify Tailwind configuration with OKLCH color palette and Playfair Display font is properly processed during build"
         }
       ]
     }

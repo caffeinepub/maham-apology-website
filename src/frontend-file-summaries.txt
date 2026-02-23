@@ -1,6 +1,8 @@
 {
-  "frontend/src/App.tsx": "Main application component featuring an interactive apology reveal - displays \"Maham\" as a clickable name that transitions to show a heartfelt apology message with animated hearts and smooth transitions.",
-  "frontend/src/index.css": "Global styles with pink/red romantic gradient background, white text throughout, elegant Playfair Display serif font for headings, custom animations for fade-in and reveal effects, and OKLCH color system tokens.",
+  "frontend/src/App.tsx": "Main application component featuring an interactive apology reveal with enhanced background hearts, 30 blue flowers scattered randomly across the viewport that remain visible throughout the entire interaction, displaying \"Maham\" as a clickable name that transitions to show an apology message with the updated heartfelt text containing multiple heart emojis in the fourth paragraph, animated hearts and smooth transitions.",
+  "frontend/src/index.css": "Global styles with pink/red romantic gradient background, white text throughout, elegant Playfair Display serif font for headings, custom animations for fade-in, reveal effects, and floating blue flowers, OKLCH color system tokens, and enhanced styling for both background hearts and blue flowers with drop-shadow filters and appropriate opacity for visibility against the gradient.",
   "frontend/tailwind.config.js": "Tailwind configuration extended with pink/red color palette using OKLCH values, Playfair Display serif font family, and custom glow shadow for romantic aesthetic.",
-  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are needed for this frontend-only application."
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are needed for this frontend-only application.",
+  "frontend/src/main.tsx": "React application entry point that initializes QueryClient and InternetIdentityProvider, then renders the App component with proper provider wrapping for React Query and Internet Identity functionality.",
+  "frontend/index.html": "HTML entry point with proper meta tags, viewport configuration, and module script reference for the React application titled \"Maham Apology Website\"."
 }

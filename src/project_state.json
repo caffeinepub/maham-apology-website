@@ -1,63 +1,24 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "An apology website for Maham with interactive name click to reveal apology, using pink/red color scheme with white text",
-  "architectural_notes": [
-    "Single-page website with click interaction",
-    "Color palette: pink/red backgrounds, white text"
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [
+    "Canister deployment resulted in Error 400 (Canister ID Not Resolved) - requires republishing to fix"
   ],
-  "known_issues": [],
-  "isFixRequest": false,
+  "isFixRequest": true,
   "existing_features": [
     {
-      "id": "feature-create-a-landing-page-that-displays-maham-as-a-clickable-name-element",
-      "title": "Create a landing page that displays 'Maham' as a clickable name element",
+      "id": "feature-republish-the-application-to-resolve-the-canister-deployment-error-and-generate-a-valid-working-url",
+      "title": "Republish the application to resolve the canister deployment error and generate a valid working URL",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
-    },
-    {
-      "id": "feature-display-an-apology-message-that-appears-after-clicking-the-name-maham",
-      "title": "Display an apology message that appears after clicking the name 'Maham'",
-      "reqIds": [
-        "REQ-2"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-implement-a-pink-and-red-color-scheme-throughout-the-website-with-all-text-rendered-in-white",
-      "title": "Implement a pink and red color scheme throughout the website with all text rendered in white",
-      "reqIds": [
-        "REQ-3"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-design-a-creative-romantic-visual-theme-with-elegant-typography-and-smooth-transitions-that-complement-the-apology-context-using-the-pink-red-color-palette-throughout",
-      "title": "Design a creative, romantic visual theme with elegant typography and smooth transitions that complement the apology context, using the pink/red color palette throughout",
-      "reqIds": [
-        "REQ-4"
-      ],
-      "version": 1
     }
   ],
-  "new_feature_requests": [
-    {
-      "id": "AR-1",
-      "summary": "Interactive name click to reveal apology message",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-2",
-      "summary": "Pink and red color scheme with white text throughout",
-      "reqIds": [],
-      "status": "pending"
-    }
-  ],
-  "gameProjectType": "none",
-  "projectName": "Maham Apology Website",
+  "new_feature_requests": [],
+  "projectName": "Mahams_website",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

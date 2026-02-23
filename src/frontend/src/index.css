@@ -124,6 +124,15 @@
     }
 }
 
+@keyframes floatFlower {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+}
+
 .fade-in {
     animation: fadeIn 1s ease-out forwards;
 }
@@ -152,6 +161,25 @@
 
 .name-button:hover::after {
     width: 80%;
+}
+
+/* Background hearts styling for better visibility */
+.background-heart {
+    color: white;
+    opacity: 0.35;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6)) 
+            drop-shadow(0 0 16px rgba(255, 182, 193, 0.4));
+    stroke: white;
+    stroke-width: 0.5px;
+}
+
+/* Blue flowers styling */
+.blue-flower {
+    color: oklch(0.65 0.20 240);
+    opacity: 0.45;
+    filter: drop-shadow(0 0 6px rgba(100, 149, 237, 0.5)) 
+            drop-shadow(0 0 12px rgba(135, 206, 250, 0.3));
+    animation: floatFlower ease-in-out infinite;
 }
 
 /* Serif font for headings */

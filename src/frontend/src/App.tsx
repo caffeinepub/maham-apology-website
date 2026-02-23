@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Heart } from 'lucide-react';
+import { Heart, Flower2 } from 'lucide-react';
 
 function App() {
   const [showApology, setShowApology] = useState(false);
@@ -8,16 +8,44 @@ function App() {
     setShowApology(true);
   };
 
+  // Generate 30 blue flowers with random positions
+  const flowers = Array.from({ length: 30 }, (_, i) => ({
+    id: i,
+    top: Math.random() * 100,
+    left: Math.random() * 100,
+    size: 16 + Math.random() * 16, // Random size between 16-32px
+    delay: Math.random() * 3, // Random animation delay
+    duration: 3 + Math.random() * 2, // Random duration between 3-5s
+  }));
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
       {/* Animated background hearts */}
       <div className="absolute inset-0 pointer-events-none">
-        <Heart className="absolute top-10 left-10 text-white/10 w-12 h-12 animate-pulse" style={{ animationDelay: '0s' }} />
-        <Heart className="absolute top-20 right-20 text-white/10 w-8 h-8 animate-pulse" style={{ animationDelay: '1s' }} />
-        <Heart className="absolute bottom-20 left-20 text-white/10 w-10 h-10 animate-pulse" style={{ animationDelay: '2s' }} />
-        <Heart className="absolute bottom-10 right-10 text-white/10 w-12 h-12 animate-pulse" style={{ animationDelay: '1.5s' }} />
-        <Heart className="absolute top-1/2 left-1/4 text-white/10 w-6 h-6 animate-pulse" style={{ animationDelay: '0.5s' }} />
-        <Heart className="absolute top-1/3 right-1/3 text-white/10 w-8 h-8 animate-pulse" style={{ animationDelay: '2.5s' }} />
+        <Heart className="background-heart absolute top-10 left-10 w-12 h-12 animate-pulse" style={{ animationDelay: '0s' }} />
+        <Heart className="background-heart absolute top-20 right-20 w-8 h-8 animate-pulse" style={{ animationDelay: '1s' }} />
+        <Heart className="background-heart absolute bottom-20 left-20 w-10 h-10 animate-pulse" style={{ animationDelay: '2s' }} />
+        <Heart className="background-heart absolute bottom-10 right-10 w-12 h-12 animate-pulse" style={{ animationDelay: '1.5s' }} />
+        <Heart className="background-heart absolute top-1/2 left-1/4 w-6 h-6 animate-pulse" style={{ animationDelay: '0.5s' }} />
+        <Heart className="background-heart absolute top-1/3 right-1/3 w-8 h-8 animate-pulse" style={{ animationDelay: '2.5s' }} />
+      </div>
+
+      {/* Blue flowers - visible at all times */}
+      <div className="absolute inset-0 pointer-events-none">
+        {flowers.map((flower) => (
+          <Flower2
+            key={flower.id}
+            className="blue-flower absolute"
+            style={{
+              top: `${flower.top}%`,
+              left: `${flower.left}%`,
+              width: `${flower.size}px`,
+              height: `${flower.size}px`,
+              animationDelay: `${flower.delay}s`,
+              animationDuration: `${flower.duration}s`,
+            }}
+          />
+        ))}
       </div>
 
       {/* Main content */}
@@ -36,7 +64,7 @@ function App() {
                 Maham
               </button>
               <p className="text-white/80 text-lg md:text-xl font-light mt-8">
-                Click my name
+                click your name
               </p>
             </div>
           </div>
@@ -58,11 +86,8 @@ function App() {
                 I'm truly sorry for what I did. I wish I could take it back, but all I can do now 
                 is promise to be better and to never make the same mistake again.
               </p>
-              <p>
-                You deserve so much more than my mistakes. Please forgive me.
-              </p>
               <p className="text-2xl md:text-3xl font-serif mt-8">
-                With all my heart ❤️
+                ♥️♥️💗💗❤️❤️ I'm sorry from the deepest part of my heart ❤️❤️💗💗♥️♥️
               </p>
             </div>
           </div>

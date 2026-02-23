@@ -1,12 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Create an interactive apology website for Maham with a clickable name reveal mechanism.
+**Goal:** Republish the application to fix the canister deployment error and generate a valid working URL.
 
 **Planned changes:**
-- Build a landing page displaying "Maham" as a prominent clickable element
-- Implement a reveal interaction that shows the apology message when the name is clicked
-- Apply a pink and red color scheme with white text throughout
-- Design romantic, elegant styling with smooth CSS transitions
+- Redeploy the application to the Internet Computer to resolve the Error 400 issue
+- Ensure the canister is properly configured and generates a valid accessible URL
 
-**User-visible outcome:** A visitor sees "Maham" displayed on the page, clicks it, and is presented with an apology message in a visually appealing pink/red themed design with white text.
+**User-visible outcome:** The application will be accessible via a working canister URL that successfully loads the apology message interface with all existing features intact.
